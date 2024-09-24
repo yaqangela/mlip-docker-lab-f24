@@ -48,7 +48,7 @@ Fill in the TODO sections.
 - [ ] Expose port 8080 or any other free port
 - [ ] Set the command to run  server.py
 
-## Deliverable 3 - Completing the Docker Compose
+## Deliverable 4 - Completing the Docker Compose
 Fill in the TODO sections:
 - Set the `Dockerfile.train` for the training service and Dockerfile.infer for the inference service.
 -  Use a shared volume (model_storage) to store the trained model between the services.
