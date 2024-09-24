@@ -1,0 +1,15 @@
+# Base image
+FROM python:3.9-slim
+
+# TODO: Set the working directory to /app
+
+# TODO: Copy the requirements.txt file to the working directory
+
+# TODO: Install the Python dependencies
+
+# TODO: Copy the Flask app (server.py) to the working directory
+
+# TODO: Expose port 8080 (or any port) for the Flask app
+
+# TODO: Set the command to run the Flask app
+CMD [...]

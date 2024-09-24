@@ -1,0 +1,13 @@
+# Base image
+FROM python:3.9-slim
+
+# TODO: Set the working directory to /app
+
+# TODO: Copy the requirements.txt file to the working directory
+
+# TODO: Install the Python dependencies
+
+# TODO: Copy the training script (train.py) to the working directory
+
+# TODO: Run the training script that generates the model
+CMD [...]
