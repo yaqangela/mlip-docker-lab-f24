@@ -49,6 +49,12 @@ Fill in the TODO sections.
 - [ ] Set the command to run  server.py
 
 ## Deliverable 4 - Completing the Docker Compose
+### Docker Compose Overview
+Docker Compose is a tool that allows you to define and manage multi-container Docker applications. It uses a docker-compose.yml file to configure the application's services, networks, and volumes. In this lab, you'll use Docker Compose to set up two services:
+
+- Training Service: This service will train a machine learning model using the Iris dataset.
+- Inference Service: Once the model is trained, the inference service will load the trained model and serve predictions via a Flask API.
+  
 Fill in the TODO sections:
 - Set the `Dockerfile.train` for the training service and Dockerfile.infer for the inference service.
 -  Use a shared volume (model_storage) to store the trained model between the services.
