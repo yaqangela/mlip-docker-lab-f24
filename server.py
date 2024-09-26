@@ -7,7 +7,8 @@ app = Flask(__name__)
 # TODO: Load the trained model from the shared volume (use the correct path)
 model = ...
 
-@app.route('/predict', methods=['POST'])
+# TODO: Add request method 
+@app.route('/predict', methods=[''])
 def predict():
     # TODO: Get the input array from the request body
     get_json = request.get_json()
