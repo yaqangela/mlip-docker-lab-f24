@@ -35,7 +35,7 @@ Fill in the TODO sections.
 
 In the server.py file, there is a function called predict() where you need to:
 - Load the trained machine learning model.
-- Run inference using an input sent through a POST request.
+- Run inference using an input sent through a GET request.
 - Return the prediction as the response.
 
 Fill in the TODO sections.
