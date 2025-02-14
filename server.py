@@ -1,14 +1,16 @@
 from flask import Flask, request, jsonify
 import numpy as np
 import joblib
+import os 
 
 app = Flask(__name__)
 
 # TODO: Load the trained model from the shared volume (use the correct path)
-model = ...
+print(os.getcwd())
+model = joblib.load('/app/models/iris_model.pkl')
 
 # TODO: Add request method 
-@app.route('/predict', methods=[''])
+@app.route('/predict', methods=['GET'])
 def predict():
     # TODO: Get the input array from the request body
     get_json = request.get_json()
@@ -16,10 +18,10 @@ def predict():
 
     # TODO: Make prediction using the model 
     # HINT: use np.array().reshape(1, -1) to convert input to 2D array
-    prediction = ...
+    prediction = model.predict(np.array(iris_input).reshape(1, -1))
 
     # TODO: Return the prediction as a response
-    return ...
+    return jsonify({'prediction': prediction.tolist()})
 
 @app.route('/')
 def hello():
